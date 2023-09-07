@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Hng task1</title>
+  </head>
+  <body>
+    <main>
+      <div class="slack_username">
+        <img
+          src="./img/WhatsApp Image copy.jpg"
+          alt="akande jubril"
+          data-testid="slackDisplayImage"
+        />
+
+        <h2 data-testid="slackUserName">Slack Name: akande jubril</h2>
+
+        <h2 data-testid="currentDayOfTheWeek" class="daysofweeek">
+          Current Day of the Week: <span id="dow"></span>
+        </h2>
+
+        <h2 class="daysofweeek">current Time: <span id="ct">time</span></h2>
+
+        <h2 data-testid="myTrack">Track: Frontend</h2>
+        <h2>
+          <span data-testid="“githubURL”"
+            >GitHub URL:<a href="https://github.com/Harkornde/hngtask-1">
+              Github</a
+            >
+          </span>
+        </h2>
+      </div>
+    </main>
+
+    <script>
+      const todayInput = document.getElementById("dow");
+      const timeInput = document.getElementById("ct");
+
+      //Getting the day
+      const weekday = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      const today = new Date();
+      const day = today.getDay();
+      const name = weekday[day];
+
+      todayInput.textContent = name;
+
+      // Getting the current UTC time
+
+      const dateMili = Date.now();
+      timeInput.textContent = dateMili;
+      console.log(dateMili);
+    </script>
+  </body>
+</html>
+
+<!-- Slack Name:
+ Display your Slack name prominently.
+ Attribute: data-testid="slackUserName"
+
+Slack Display Picture:
+ Showcase your Slack profile picture.
+ The image's alt attribute should be your Slack username.
+ Attribute: data-testid="slackDisplayImage"
+ 
+Current Day of the Week:
+ Indicate the current day of the week (e.g., Monday, Tuesday).
+Attribute: data-testid="currentDayOfTheWeek"
+
+Current UTC Time:
+ Display the current UTC time in milliseconds.
+ Attribute: data-testid="currentUTCTime"
+
+Track:
+ Mention your track (e.g Frontend).
+ Attribute: data-testid="myTrack"
+GitHub URL:
+ Provide a clickable link to your GitHub repository where the source code for this task resides.
+ Attribute: data-testid=“githubURL” -->

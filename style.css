@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  text-align: center;
+}
+
+.slack_username img {
+  margin-top: 150px;
+  width: 300px;
+  border-radius: 10%;
+}
+
+h2 {
+  margin: 20px auto;
+}
+
+h2:nth-child(2) {
+  color: red;
+  font-size: 22px;
+}
+
+h2:nth-child(3) {
+  color: green;
+  font-size: 22px;
+}
+
+h2:nth-child(4) {
+  color: blue;
+  font-size: 22px;
+}
+
+h2:nth-child(5) {
+  color: brown;
+  font-size: 22px;
+}
