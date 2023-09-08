@@ -5,7 +5,6 @@
 }
 
 a {
-  text-decoration: none;
   color: black;
 }
 body {
@@ -13,7 +12,6 @@ body {
 }
 
 .slack_username img {
-  margin-top: 150px;
   width: 300px;
   border-radius: 10%;
 }
@@ -22,9 +20,10 @@ h2 {
   margin: 20px auto;
 }
 
-h2:nth-child(2) {
+h2:nth-child(1) {
   color: red;
   font-size: 22px;
+  margin-top: 150px;
 }
 
 h2:nth-child(3) {
