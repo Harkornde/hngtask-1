@@ -15,7 +15,7 @@ const today = new Date();
 const day = today.getDay();
 const name = weekday[day];
 
-todayInput.textContent = name;
+todayInput.textContent = `${name},`;
 
 // Getting the current UTC time
 
@@ -25,5 +25,5 @@ const updateTime = () => {
   timeInput.textContent = dateMili;
 };
 
-setInterval(updateTime,1000)
+setInterval(updateTime, 1000);
 timeInput.textContent = dateMili;
