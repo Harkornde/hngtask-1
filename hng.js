@@ -13,17 +13,23 @@ const weekday = [
 ];
 const today = new Date();
 const day = today.getDay();
-const name = weekday[day];
+const nam = weekday[day];
 
-todayInput.textContent = `${name},`;
+todayInput.textContent = `${nam},`;
 
 // Getting the current UTC time
 
-const updateTime = () => {
-  const date = new Date();
-  const dateMili = date.toISOString().substr(12, 8);
-  timeInput.textContent = dateMili;
-};
+// const updateTime = () => {
+//   const date = new Date();
+//   const dateMili = date.toISOString().substr(12, 8);
+//   timeInput.textContent = dateMili;
+// };
 
-setInterval(updateTime, 1000);
-timeInput.textContent = dateMili;
+// setInterval(updateTime, 1000);
+// timeInput.textContent = dateMili;
+
+let timeInMilliseconds = () => {
+    const da = Date.now();
+    timeInput.textContent = da
+};
+setInterval(timeInMilliseconds,1);
